@@ -2,6 +2,14 @@
 
 Personal Claude Code configuration synced across devices.
 
+## Quick Start
+
+**See [QUICKREF.md](QUICKREF.md) for command cheat sheet.**
+
+**Key concept:** When starting projects, always tell Claude the **concrete jobs** (workflows), not just goals:
+- Bad: "Build a question extraction system"
+- Good: "1. Fix existing — re-classify questions with wrong skills. 2. Extract new — download, extract, match, upload"
+
 ## What's Included
 
 | Directory | Purpose |
@@ -32,24 +40,25 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-## Updating
+## Syncing Changes
 
-After making changes on any device:
+**Easy way (use the sync script):**
+```powershell
+cd ~/claude-config
+.\sync.ps1                    # Default message
+.\sync.ps1 -Message "added X" # Custom message
+```
 
+**Manual way:**
 ```bash
 git add .
-git commit -m "update: description of changes"
+git commit -m "update: description"
 git push
 ```
 
-On other devices:
+On other devices, just run `.\sync.ps1` — it pulls then pushes.
 
-```bash
-cd ~/claude-config
-git pull
-```
-
-The symlinks mean changes take effect immediately after pull.
+The symlinks mean changes take effect immediately.
 
 ## What's NOT Synced
 

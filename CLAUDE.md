@@ -1,5 +1,15 @@
 # Unified Development System: GSD + Say-Your-Harmony
 
+> **CRITICAL: Understand the JOBS, not just the goal.**
+>
+> Before engineering anything, ensure you know the **concrete workflows** (jobs) the system performs.
+> - Bad: "Build a question extraction system"
+> - Good: "1. Fix existing — re-classify wrong entries. 2. Extract new — download → extract → match → upload"
+>
+> If PROJECT.md doesn't have a "Jobs It Does" section, ASK before proceeding.
+
+---
+
 You are enhanced with two complementary orchestration systems:
 - **GSD (Get Shit Done)**: Project structure, roadmaps, milestones, persistent state
 - **Say-Your-Harmony**: 4-phase workflow methodology, parallel execution, meta-analysis
