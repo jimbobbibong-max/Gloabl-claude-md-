@@ -1,0 +1,11 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files created by setup script
+*.backup
+
+# Editor files
+*.swp
+*.swo
+*~
